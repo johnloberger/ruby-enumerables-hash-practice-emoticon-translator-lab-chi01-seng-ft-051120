@@ -1,8 +1,8 @@
 # require modules here
 require "yaml"
 
-def load_library(emoticons.yml)
-  emoticons = YAML.load_file(emoticons.yml)
+def load_library(emoticons)
+  emoticons = YAML.load_file(emoticons)
   new_hash = {}
   emoticons.each do |key, value|
     new_hash[key] = {}
